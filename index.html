@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Expenses</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- error  -->
+    <div class="error-box" id="error-box">
+        <button id="close"><i class="fa-solid fa-xmark"></i></button>
+        <div class="error" id="error1">
+            <p>Your Income is :<span id="have"></span> But You Spend <span id="spend"></span> please put currect
+                information</p>
+        </div>
+        <!-- error -->
+        <div class="error" id="error2">
+            <p>You just :<span id="youhave"></span> On <span id="afterb"></span> & try put currect number please</p>
+        </div>
+
+    </div>
+
+    <section class="main">
+        <h1 class="heading-title">Make Money Online</h1>
+
+        <!-- box-container  -->
+
+        <div class="box-container">
+            <!-- box 1 start Here  -->
+            <div class="box box1">
+                <img src="images/money.jpeg" alt="">
+            </div>
+            <div class="box box2">
+                <h1>Income</h1>
+                <!-- form start  -->
+                <div class="form">
+                    <p>income</p>
+                    <input type="text" id="income" placeholder="Enter your  Income Amount">
+
+                </div>
+                <div class="section-2">
+                    <h1>Expenses</h1>
+                    <div class="form">
+                        <p>Food</p>
+                        <input type="text" id="food" placeholder="Enter your Food Cost">
+                    </div>
+
+                    <div class="form">
+                        <p>Rent </p>
+                        <input type="text" id="rent" placeholder="Enter your Rent Cost">
+                    </div>
+
+                    <div class="form">
+                        <p>Clothes</p>
+                        <input type="text" id="clothses" placeholder="Enter your Clothes Cost">
+                    </div>
+
+                </div>
+                <button id="calculate" class="calculate">Calculate</button>
+                <div class="content">
+                    <h3>Total Expreses: <span id="totoal-exprese">0</span></h3>
+                    <h3>Balance:<span id="balance">0</span></h3>
+                </div>
+
+                <div class="save">
+                    <p>Save:</p>
+                    <input type="text" id="persent" placeholder=" %">
+                    <h1>%</h1> <button id="save">Save</button>
+                </div>
+
+                <p>Save Amount:<span id="save-amount">0</span></p>
+                <div class="space-10px"></div>
+                <p>Remaining Balance:<span id="rem-balance"> 0</span></p>
+
+            </div>
+        </div>
+    </section>
+    <script src="js/money.js"></script>
+</body>
+
+</html>

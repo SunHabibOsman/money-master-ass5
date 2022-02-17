@@ -1,0 +1,205 @@
+/* google Font Link  */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* style  */
+
+.space-10px {
+    height: 10px;
+}
+
+
+
+.box-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    width: 45%;
+}
+
+.box img {
+    width: 100%;
+    height: 100vh;
+}
+
+.heading-title {
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.box2 {
+    background-color: #a3227cbe;
+    padding: 50px;
+    width: 40%;
+}
+
+.box1 {
+    
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.box2 .form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box2 h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.form p,
+.save p,
+.box p {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.form input,
+.save input {
+    background-color: aliceblue;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.section-2 .form {
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+.calculate {
+    margin-top: 15px;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  
+}
+
+.content h3 {
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+span {
+    color: rgb(255, 0, 0);
+}
+
+.save {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.save input {
+    width: 100%;
+}
+
+.save h1 {
+    padding: 0px 10px 0px 10px;
+}
+
+
+/*  Error Box  */
+
+.error-box {
+    width: 400px;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: lightpink;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.error {
+    display: none;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(97, 89, 89);
+}
+
+.error p {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(11, 17, 44);
+}
+
+#close {
+    color: red;
+    margin-bottom: 15px;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid red;
+}
+
+/*  responsive device  */
+
+@media only screen and (max-width: 900px) {
+    .box-container {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+    .box {
+        width: 90%;
+        padding: 20px;
+    }
+    input {
+        width: 100%;
+    }
+    .box img {
+        width: 100%;
+        height: 300px;
+    }
+    .form p,
+    .save p,
+    .box p {
+        margin-right: 10px;
+        font-size: 18px;
+    }
+   
+    .error-box {
+        width: 90%;
+    }
+   
+}
+
